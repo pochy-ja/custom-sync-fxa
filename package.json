@@ -1,7 +1,7 @@
 {
   "title": "Custom Sync and FXA",
   "name": "custom-sync-fxa",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Add-on to customize server addresses for Server Sync and Firefox Accounts.",
   "main": "index.js",
   "author": { "name" : "Juan Antonio Aguilera  Tamayo", 
@@ -13,5 +13,41 @@
   },
   "license": "MPL-2.0",
   "id": "custom-sync-fxa@firefoxmania.uci.cu",
-  "homepage": "https://codecomunidades.uci.cu/pochy/custom-sync-fxa"
+  "homepage": "https://codecomunidades.uci.cu/pochy/custom-sync-fxa",
+  "preferences": [{
+        "name": "urlsync",
+        "title": "Server Sync",
+        "description": "The URL for your own Sync Server.",
+        "type": "string",
+        "value": "" },
+    {
+        "name": "useSync",
+        "title": "Use Sync",
+        "description": "Mark if use your own Sync Server.",
+        "type": "bool",
+        "value": false },
+    {
+        "name": "urlauth",
+        "title": "Server Auth",
+        "description": "The URL for your own Firefox Auth Server.",
+        "type": "string",
+        "value": "" },
+   {
+        "name": "usefxauth",
+        "title": "Use Auth",
+        "description": "Mark if use your own Firefox Auth Server.",
+        "type": "bool",
+        "value": false },
+    {
+        "name": "urlfxcontent",
+        "title": "Server Content",
+        "description": "The URL for your own Firefox Content Server.",
+        "type": "string",
+        "value": "" },
+    {
+        "name": "usefxcontent",
+        "title": "Use Content",
+        "description": "Mark for use your own Firefox Content Server.",
+        "type": "bool",
+        "value": false }]
 }

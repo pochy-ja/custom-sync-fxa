@@ -13,7 +13,7 @@ var tabs = require("sdk/tabs");
 
 var button = buttons.ActionButton({
   id: "mozilla-link",
-  label: "Visit Mozilla",
+  label: "Custom Sync and FXA",
   icon: {
     "16": "./icon-16.png",
     "32": "./icon-32.png",

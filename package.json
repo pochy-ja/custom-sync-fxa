@@ -1,17 +1,17 @@
 {
-  "title": "Custom Sync",
-  "name": "customsync",
-  "version": "0.1",
-  "id": "customsync@firefoxmania.uci.cu",
-  "description": "Add-on to customize server addresses Firefox Sync and Firefox Accounts.",
+  "title": "Custom Sync and FXA",
+  "name": "custom-sync-fxa",
+  "version": "0.0.1",
+  "description": "Add-on to customize server addresses for Server Sync and Firefox Accounts.",
   "main": "index.js",
-  "author": {
-    "name": "Juan Antonio Aguilera Tamayo (Pochy)",
-    "email": "pochy.jaaguilera@gmail.com",
-    "url": "http://firefoxmania.uci.cu/author/pochy/"
-    },
+  "author": { "name" : "Juan Antonio Aguilera  Tamayo", 
+  "email" : "pochy.jaaguilera@gmail.com" , 
+  "url" : "http://firefoxmania.uci.cu/author/pochy/"
+  },
   "engines": {
     "firefox": ">=38.0a1"
   },
-  "license": "MPL-2.0"
+  "license": "MPL-2.0",
+  "id": "custom-sync-fxa@firefoxmania.uci.cu",
+  "homepage": "https://codecomunidades.uci.cu/pochy/custom-sync-fxa"
 }

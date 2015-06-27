@@ -1,5 +1,5 @@
 Custom Sync and FXA
-===================
+--------------------
 
 Add-on to customize server addresses for Server Sync and Firefox Accounts.
 

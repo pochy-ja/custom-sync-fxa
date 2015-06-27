@@ -1,27 +1,32 @@
-var self = require('sdk/self');
+var sp = require("sdk/simple-prefs");
+var { get, set, reset } = require("sdk/preferences/service");
 
-// a dummy function, to show how tests work.
-// to see how to test this function, look at test/test-index.js
-function dummy(text, callback) {
-  callback(text);
+// Server Sync
+
+function onPrefSync(){
+  if(sp.prefs["usesync"] == true){
+    set("services.sync.tokenServerURI", sp.prefs["schemasync"]+"://"+sp.prefs["urlsync"]+"/token/1.0/sync/1.5");
+  }
+  else{
+    reset("services.sync.tokenServerURI");
+  }
 }
 
-exports.dummy = dummy;
+sp.on("usesync", onPrefSync);
+sp.on("urlsync", onPrefSync);
+sp.on("schemasync", onPrefSync);
 
-var buttons = require('sdk/ui/button/action');
-var tabs = require("sdk/tabs");
+// Server Auth
 
-var button = buttons.ActionButton({
-  id: "mozilla-link",
-  label: "Custom Sync and FXA",
-  icon: {
-    "16": "./icon-16.png",
-    "32": "./icon-32.png",
-    "64": "./icon-64.png"
-  },
-  onClick: handleClick
-});
-
-function handleClick(state) {
-  tabs.open("http://www.mozilla.org/");
+function onPrefAuth(){
+  if ( sp.prefs["useauth"]== true) {
+    set("identity.fxaccounts.auth.uri", sp.prefs["schemauth"]+"://"+sp.prefs["urlauth"]+"/v1");
+  }
+  else{
+    reset("identity.fxaccounts.auth.uri");
+  }
 }
+
+sp.on("useauth", onPrefAuth);
+sp.on("urlauth", onPrefAuth);
+sp.on("schemauth", onPrefAuth);

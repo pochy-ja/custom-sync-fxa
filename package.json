@@ -13,6 +13,7 @@
   },
   "license": "MPL-2.0",
   "id": "custom-sync-fxa@firefoxmania.uci.cu",
+  "icon": "icon.png",
   "homepage": "https://codecomunidades.uci.cu/pochy/custom-sync-fxa",
   "preferences": [{
         "name": "urlsync",
@@ -21,7 +22,22 @@
         "type": "string",
         "value": "" },
     {
-        "name": "useSync",
+        "name": "schemasync",
+        "type": "radio",
+        "title": "Schema for Server Sync",
+        "value": "https",
+        "options":[
+          { 
+            "value": "https",
+            "label": "https"
+          },
+          {
+            "value": "http",
+            "label": "http"
+          }
+        ] },    
+    {
+        "name": "usesync",
         "title": "Use Sync",
         "description": "Mark if use your own Sync Server.",
         "type": "bool",
@@ -32,20 +48,35 @@
         "description": "The URL for your own Firefox Auth Server.",
         "type": "string",
         "value": "" },
+    {
+        "name": "schemauth",
+        "type": "radio",
+        "title": "Schema for Server Auth",
+        "value": "https",
+        "options":[
+          { 
+            "value": "https",
+            "label": "https"
+          },
+          {
+            "value": "http",
+            "label": "http"
+          }
+        ] },    
    {
-        "name": "usefxauth",
+        "name": "useauth",
         "title": "Use Auth",
         "description": "Mark if use your own Firefox Auth Server.",
         "type": "bool",
         "value": false },
     {
-        "name": "urlfxcontent",
+        "name": "urlcontent",
         "title": "Server Content",
         "description": "The URL for your own Firefox Content Server.",
         "type": "string",
         "value": "" },
     {
-        "name": "usefxcontent",
+        "name": "usecontent",
         "title": "Use Content",
         "description": "Mark for use your own Firefox Content Server.",
         "type": "bool",

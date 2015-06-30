@@ -2,7 +2,7 @@
   "title": "Custom Sync and FXA",
   "name": "custom-sync-fxa",
   "version": "0.1.6",
-  "description": "Add-on to customize server addresses for Server Sync and Firefox Accounts.",
+  "description": "Add-on to customize server addresses for Server Sync and Firefox Accounts. You only need put the domain or IP and port in the input for each service, the Add-on complete the task and and adds the rest of URL in each preferences.",
   "main": "index.js",
   "author": { "name" : "Juan Antonio Aguilera  Tamayo", 
   "email" : "pochy.jaaguilera@gmail.com" , 

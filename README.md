@@ -10,7 +10,7 @@ https://docs.services.mozilla.com/howtos/run-sync-1.5.html
 https://docs.services.mozilla.com/howtos/run-fxa.html
 
 
-Know Bugs
+Known Bugs
 ---------
 
 - When disconnect from Firefox Account, the preference "services.sync.tokenServerURI" reset his value by default.

@@ -14,11 +14,11 @@
   "license": "MPL-2.0",
   "id": "custom-sync-fxa@firefoxmania.uci.cu",
   "icon": "icon.png",
-  "homepage": "https://codecomunidades.uci.cu/pochy/custom-sync-fxa",
+  "homepage": "https://github.com/pochy-ja/custom-sync-fxa",
   "preferences": [{
         "name": "urlsync",
         "title": "Server Sync",
-        "description": "The URL for your own Sync Server.",
+        "description": "The domain or IP and port (if necessary) for your own Sync Server.",
         "type": "string",
         "value": "" },
     {
@@ -45,7 +45,7 @@
     {
         "name": "urlauth",
         "title": "Server Auth",
-        "description": "The URL for your own Firefox Auth Server.",
+        "description": "The domain or IP and port (if necessary) for your own Firefox Auth Server.",
         "type": "string",
         "value": "" },
     {
@@ -72,7 +72,7 @@
     {
         "name": "urlcontent",
         "title": "Server Content",
-        "description": "The URL for your own Firefox Content Server.",
+        "description": "The domain or IP and port (if necessary) for your own Firefox Content Server.",
         "type": "string",
         "value": "" },
     {

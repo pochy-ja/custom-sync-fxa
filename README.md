@@ -1,9 +1,9 @@
 Custom Sync and FXA
 --------------------
 
-Add-on to customize server addresses for Server Sync and Firefox Accounts.
+Add-on to customize server addresses for Server Sync v1.5 and Firefox Accounts.
 
-This addon is created to be a tool to run your own Sync Server and Firefox Account and is based in this two tutorials.
+This addon is created to be a tool to run your own Sync Server v1.5 and Firefox Account and is based in this two tutorials.
 
 https://docs.services.mozilla.com/howtos/run-sync-1.5.html
 
@@ -14,10 +14,18 @@ Known Bugs
 ---------
 
 - When disconnect from Firefox Account, the preference "services.sync.tokenServerURI" reset his value by default.
-More info in [bug 1003708](https://bugzilla.mozilla.org/show_bug.cgi?id=1003708). I hope they fix it ASAP.
+More info in [bug 1003708](https://bugzilla.mozilla.org/show_bug.cgi?id=1003708). 
+
+Fixed for firefox 42 with new preference ("identity.sync.tokenserver.uri")!
 
 Changelod
 ----------
+
+0.1.9
+
+Support for [bug 1003708](https://bugzilla.mozilla.org/show_bug.cgi?id=1003708) and some string in the translation of preferences.
+
+Add version of server Sync.
 
 0.1.6
 

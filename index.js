@@ -5,10 +5,18 @@ var { get, set, reset } = require("sdk/preferences/service");
 
 function onPrefSync(){
   if(sp.prefs["usesync"] == true){
-    set("services.sync.tokenServerURI", sp.prefs["schemasync"]+"://"+sp.prefs["urlsync"]+"/token/1.0/sync/1.5");
+    var str = get("gecko.mstone");
+    var res = str.split(".");
+    console.log(res);
+    if( res[0] < 42){
+      pr = "services.sync.tokenServerURI";
+    }else{
+      pr = "identity.sync.tokenserver.uri";
+    }
+    set(pr, sp.prefs["schemasync"]+"://"+sp.prefs["urlsync"]+"/token/1.0/sync/1.5");
   }
   else{
-    reset("services.sync.tokenServerURI");
+    reset(pr);
   }
 }
 

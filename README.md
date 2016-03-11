@@ -9,17 +9,15 @@ https://docs.services.mozilla.com/howtos/run-sync-1.5.html
 
 https://docs.services.mozilla.com/howtos/run-fxa.html
 
-
-Known Bugs
----------
-
-- When disconnect from Firefox Account, the preference "services.sync.tokenServerURI" reset his value by default.
-More info in [bug 1003708](https://bugzilla.mozilla.org/show_bug.cgi?id=1003708). 
-
-Fixed for firefox 42 with new preference ("identity.sync.tokenserver.uri")!
-
 Changelod
 ----------
+1.0.1
+
+Removed support for old sync server.
+
+Minimun version required of firefox 42.
+
+Minor changes on translations.
 
 0.1.9
 

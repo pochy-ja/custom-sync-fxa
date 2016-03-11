@@ -1,15 +1,20 @@
 {
   "title": "Custom Sync and FXA",
   "name": "custom-sync-fxa",
-  "version": "0.1.9",
-  "description": "Add-on to customize server addresses for Server Sync v1.5 and Firefox Accounts. You only need put the domain or IP and port in the input for each service, the Add-on complete the task and and adds the rest of URL in each preferences.",
+  "version": "1.0.1",
+  "description": "Add-on to customize server addresses for Server Sync v1.5 and Firefox Accounts. You only need put the domain or IP and port(if needed) in the input for each service, the Add-on complete the task and and adds the rest of URL in each preferences.",
+  "locales":{
+    "es" : {
+      "title": "Perzonalizar Sync and FXA",
+      "description": "Complemento para perzonalizar las direcciones de los servidores de Sync v1.5 y cuentas de firefox(FXA). Usted solo necesita poner el dominio o la IP y el puerto(si fuera necesario) en el campo de cada servicio, el complemento termina la tarea y agrega el resto de la dirección en cada una de las preferencias."}
+    },
   "main": "index.js",
   "author": { "name" : "Pochy", 
   "email" : "pochy.jaaguilera@gmail.com" , 
   "url" : "http://firefoxmania.uci.cu/author/pochy/"
   },
   "engines": {
-    "firefox": ">=38.0a1"
+    "firefox": ">=42.0"
   },
   "license": "MPL-2.0",
   "id": "custom-sync-fxa@firefoxmania.uci.cu",

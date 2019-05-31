@@ -9,7 +9,7 @@ https://docs.services.mozilla.com/howtos/run-sync-1.5.html
 
 https://docs.services.mozilla.com/howtos/run-fxa.html
 
-Changelod
+Changelog
 ----------
 1.0.1
 
